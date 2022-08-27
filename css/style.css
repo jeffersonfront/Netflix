@@ -5,7 +5,8 @@
 
 body {
     font-family: sans-serif;
-color: white;
+    color: white;
+    
 }
 
 img{
@@ -13,29 +14,35 @@ img{
     max-width: 100%;
 }
 
+
 .header{
     position: absolute;
     z-index: 100;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    max-width: 1790px;
+    max-width: 1130px;
     top: 28px;
     left: 56px;
+    
 }
 
 .container{
     max-width: 1130px;
+    min-width: 320px;
     margin: 0 auto;
 }
 .header a{
     display: inline-block;
     background: #e50914;
     color: white;
-    align-items: flex-start;
-    padding: 10px 18px;
+    align-items: flex-end;
+    padding: 7px 20px;
     text-decoration: none;
     border-radius: 3px;
+    position: center;
+    font: bold;
+    
 }
 .main {
     height: 785px;
@@ -141,17 +148,27 @@ justify-items: center;
 
 .img-tv{
 position: relative;
+left: 100px, relative;
+top: -45px, relative;
 }
 
 .img-tv img{
     position: relative;
     z-index: 1;
+    
+}
+
+.slide-tv{
+    position: absolute;
+    width: 400px;
+    top: 91px;
+    left: 85px;
 }
 .video-tv {
     position: absolute;
-    width: 400px;
-    top: 80px;
-    left: 70px;
+    width: 350px;
+    top: 45px;
+    left: 109px;
 }
 
 .device-pile .video-tv {
@@ -178,7 +195,8 @@ position: relative;
     display: flex;
     left: 50%;
     margin: 3 auto;
-    min-width: 15em;
+    min-width: 20em;
+    min-height: 5em;
     padding: 0.25em 0.65em;
     position: relative;
     transform: translateX(-50%);
@@ -215,13 +233,28 @@ position: relative;
     order: 2;
 }
 
-.criança .img-tv {
-    order: 1;
-}
 
-@media screen and (max-width:1920px ) {
+@media screen and (max-width:1920px ) and (min-width:320px ) {
     body, aside, .img-tv {
         width: 100%;
         padding: 0%;
     }
+}
+
+.strangerdown{
+    width: 50px;
+    position: absolute;
+}
+
+.texto-down{
+    padding: 5%;
+    margin-left: 15%;
+}
+
+.criança{
+    position: auto;
+}
+
+.aproveite{
+    position: auto;
 }
